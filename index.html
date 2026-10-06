@@ -257,6 +257,41 @@
     .proteinBox input{width:21px;height:21px;accent-color:var(--green)}
     footer{color:var(--muted);font-size:12px;line-height:1.5;padding:0 0 38px}
 
+
+    .recipeArt{
+      width:100%;
+      aspect-ratio:2.35/1;
+      border-radius:20px;
+      overflow:hidden;
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(255,255,255,.95);
+      box-shadow:0 8px 20px rgba(47,67,53,.08);
+      position:relative;
+    }
+    .recipeArt .sprite,
+    .modalArt .sprite{
+      width:100%;
+      height:100%;
+      background-repeat:no-repeat;
+      display:block;
+    }
+    .cardTop{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:12px;
+      align-items:start;
+    }
+    .modalArt{
+      width:min(360px,72vw);
+      aspect-ratio:2.35/1;
+      border-radius:20px;
+      overflow:hidden;
+      background:rgba(255,255,255,.84);
+      border:1px solid var(--line);
+      box-shadow:0 8px 20px rgba(47,67,53,.08);
+      margin-bottom:12px;
+    }
+
     @media (prefers-reduced-motion:no-preference){
       .logo{animation:floaty 4.8s ease-in-out infinite}
       @keyframes floaty{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(-1deg) translateY(-4px)}}
